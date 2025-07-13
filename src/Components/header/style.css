@@ -1,0 +1,20 @@
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+}
+
+.logo{
+    font-size: 20px;
+    color: black;
+}
+
+.nav-links a {
+    margin-left : 24px;
+    color: #EEEEEE;
+}
+
+.nav-links a:hover{
+    text-decoration: underline;
+}
