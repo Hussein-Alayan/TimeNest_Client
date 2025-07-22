@@ -1,0 +1,36 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-color);
+}
+
+.auth-box {
+  background: var(--secondary-color);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  min-width: 340px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.auth-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--muted-text);
+}
+
+.auth-toggle {
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+} 

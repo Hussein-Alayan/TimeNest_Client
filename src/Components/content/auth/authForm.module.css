@@ -1,0 +1,46 @@
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: var(--secondary-color);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.12);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+.formHeader h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.formHeader .highlight {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.formGroup {
+  margin-bottom: 0.5rem;
+}
+
+.formButton {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.signupLink, .loginLink {
+  text-align: center;
+  color: var(--muted-text, #ccc);
+  font-size: 0.95rem;
+}
+
+.authToggle {
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 0.2rem;
+}
