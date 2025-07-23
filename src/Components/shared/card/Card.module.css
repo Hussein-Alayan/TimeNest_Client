@@ -1,0 +1,64 @@
+.timecard {
+  background: var(--secondary-color);
+  border: 4px solid var(--primary-color);
+  border-radius: var(--radius);
+  color: var(--text-color);
+  max-width: 370px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.timecardImageWrapper {
+  width: 100%;
+  height: 180px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.timecardImageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius) var(--radius) 0 0;
+  display: block;
+}
+
+.timecardBody {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  gap: 12px;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonSection {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.timecardTitle {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.timecardTags {
+  margin-top: 4px;
+}
+
+.timecardTag {
+  font-size: 0.875rem;
+  margin-right: 6px;
+}
+
+.timecardCountdown {
+  font-size: 0.9rem;
+  opacity: 0.8;
+} 

@@ -1,0 +1,179 @@
+.homePageContainer {
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.homeMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 1rem 0 1rem;
+}
+
+.heroSection {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.heroSection h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+.highlight {
+  color: var(--primary-color);
+}
+.subtitle {
+  color: var(--muted-text, #ccc);
+  margin-bottom: 2rem;
+  font-size: 1.15rem;
+}
+.heroButtons {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.featuresSection {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+  background: var(--bg-color);
+  box-shadow: none;
+  border-radius: var(--radius);       
+  border: 2px solid var(--primary-color); 
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.featuresSection h2 {
+  background: inherit;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  border-radius: var(--radius) var(--radius) 0 0;
+  padding-bottom: 0.5rem;
+}
+.featuresContent {
+  background: inherit;
+  width: 100%;
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+.icon {
+  margin-right: 0.7rem;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+.featuresImage img {
+  width: 320px;
+  max-width: 100%;
+  border-radius: var(--radius);
+  border: 2px solid var(--primary-color);
+  background: #23272f;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.publicCapsulesSection {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 3rem auto;
+}
+.publicCapsulesSection h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.capsulesList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: stretch;
+  width: 100%;
+}
+
+.homeFooter {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 1.2rem 0 0.7rem 0;
+  border-radius: var(--radius) var(--radius) 0 0;
+  margin-top: 2.5rem;
+}
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+.footerLogo {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.footerNav {
+  display: flex;
+  gap: 2.2rem;
+}
+.footerNav a {
+  color: var(--white);
+  font-weight: 500;
+}
+.footerCopy {
+  font-size: 1rem;
+  color: var(--white);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(20, 20, 20, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.exploreMoreBtnContainer {
+  text-align: center;
+  margin-top: 24px;
+}
+
+@media (max-width: 800px) {
+  .featuresContent {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .featuresImage img {
+    width: 140px;
+  }
+  .capsulesList {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+} 

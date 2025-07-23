@@ -1,0 +1,29 @@
+.appHeader {
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+  max-width: 1200px;
+}
+.logo {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navLinks {
+  display: flex;
+  gap: 2rem;
+}
+.navLinks a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+.navLinks a:hover {
+  color: var(--muted-text);
+  text-decoration: underline;
+} 

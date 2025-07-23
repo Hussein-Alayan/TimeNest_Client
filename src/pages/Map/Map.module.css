@@ -1,0 +1,49 @@
+.page {
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.mapContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.mapDiv {
+  width: 900px;
+  height: 500px;
+  background: #23272f;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+  border: 2px solid var(--primary-color);
+}
+
+.popupContent {
+  font-size: 1.1rem;
+  color: #111;
+  min-width: 120px;
+}
+
+.popupTags {
+  margin-top: 4px;
+  font-size: 0.95rem;
+  color: #444;
+  word-break: break-word;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem 0;
+}
+
+@media (max-width: 1000px) {
+  .mapDiv {
+    width: 100vw;
+    min-width: 0;
+    max-width: 100%;
+  }
+} 
