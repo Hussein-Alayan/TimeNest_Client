@@ -3,7 +3,8 @@ import styles from "./Map.module.css";
 import * as maptilersdk from "@maptiler/sdk";
 import "@maptiler/sdk/dist/maptiler-sdk.css";
 
-maptilersdk.config.apiKey = "xoUY9Cm5hQK0qZEyv0HI";
+// Use API key from environment variable
+maptilersdk.config.apiKey = process.env.REACT_APP_MAPTILER_API_KEY;
 
 const MapPage = () => {
   const mapRef = useRef(null);
