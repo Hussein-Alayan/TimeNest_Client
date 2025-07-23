@@ -10,6 +10,7 @@ const LoginForm = ({ toggle }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   return (
@@ -18,15 +19,20 @@ const LoginForm = ({ toggle }) => {
       onSubmit={async (e) => {
         e.preventDefault();
         setError("");
+        setLoading(true);
         try {
           const res = await axios.post("http://localhost:8000/api/v0.1/guest/login", { email, password });
-          localStorage.setItem("token", res.data.token);
+          localStorage.setItem("token", res.data.payload.token);
           if (res.data.payload?.username) {
             localStorage.setItem("username", res.data.payload.username);
           }
           navigate("/profile");
-        } catch {
-          setError("Invalid email or password.");
+        } catch (err) {
+          setError(
+            err.response?.data?.message || "Login failed. Please try again."
+          );
+        } finally {
+          setLoading(false);
         }
       }}
     >
@@ -57,9 +63,10 @@ const LoginForm = ({ toggle }) => {
       </div>
 
       {error && <div style={{ color: "red", marginTop: 8 }}>{error}</div>}
+      {loading && <div style={{ marginTop: 8, color: "#00adb5", fontWeight: 500 }}>Loading...</div>}
 
       <div className={shared.formButton}>
-        <Button text="Sign in" type="submit" />
+        <Button text="Sign in" type="submit" disabled={loading} />
       </div>
 
       <p className={shared.signupLink}>

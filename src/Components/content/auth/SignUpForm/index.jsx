@@ -29,14 +29,13 @@ const SignUpForm = ({ toggle }) => {
             email,
             password,
           });
-          localStorage.setItem("token", res.data.token);
+          localStorage.setItem("token", res.data.payload.token);
           if (res.data.payload?.username) {
             localStorage.setItem("username", res.data.payload.username);
           }
           navigate("/profile");
         } catch (err) {
           const backendMsg = err.response?.data?.message || "Registration failed. Please try again.";
-          // Check for duplicate username error
           if (backendMsg.includes("Duplicate entry") && backendMsg.includes("users_username_unique")) {
             setError("This username is already taken. Please choose another.");
           } else {
