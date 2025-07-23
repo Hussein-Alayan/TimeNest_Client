@@ -38,45 +38,25 @@
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
-.capsuleGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-.capsuleCard {
-  background: var(--secondary-color);
-  border: 4px solid var(--primary-color);
-  border-radius: var(--radius);
-  color: var(--white);
-  min-height: 140px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
+
+.dashboardBtnContainer {
+  margin-top: 32px;
   text-align: center;
-  padding: 1.2rem 0.5rem;
 }
-.capsuleTitle {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
+
+.errorMsg {
+  color: #ff4d4f;
+  font-weight: 500;
 }
-.capsuleStatus {
-  font-size: 1rem;
-  color: var(--muted-text);
-}
-.seeMoreBtn {
-  margin: 0 auto;
-  display: block;
+
+.logoutRow {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
 }
 
 @media (max-width: 700px) {
   .profilePage {
     padding: 1.2rem 0.5rem;
-  }
-  .capsuleGrid {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
   }
 } 
