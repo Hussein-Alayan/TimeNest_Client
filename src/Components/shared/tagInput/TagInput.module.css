@@ -1,0 +1,44 @@
+.tagInputWrapper {
+  width: 100%;
+  margin: 0.5rem 0 1.2rem 0;
+}
+.tagsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  background: var(--secondary-color);
+  border: 1.5px solid var(--primary-color);
+  border-radius: var(--radius);
+  padding: 0.5rem 0.7rem;
+}
+.tagChip {
+  display: flex;
+  align-items: center;
+  background: var(--primary-color);
+  color: var(--white);
+  border-radius: 20px;
+  padding: 0.3rem 0.9rem 0.3rem 0.8rem;
+  font-size: 0.98rem;
+  font-weight: 500;
+}
+.removeBtn {
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 1.1rem;
+  margin-left: 0.4rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+.input {
+  flex: 1;
+  min-width: 120px;
+  border: none;
+  background: transparent;
+  color: var(--text-color);
+  font-size: 1rem;
+  outline: none;
+  padding: 0.3rem 0.5rem;
+} 

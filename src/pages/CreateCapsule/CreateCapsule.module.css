@@ -1,0 +1,80 @@
+.createCapsulePage {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: var(--bg-color);
+  color: var(--text-color);
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem 2rem 2rem;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+}
+
+.backBtn {
+  color: var(--white);
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.backBtn:hover {
+  color: var(--primary-color);
+}
+
+.pageTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.surpriseMode {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.surpriseCheckbox {
+  width: 22px;
+  height: 22px;
+  accent-color: var(--primary-color);
+}
+
+.actionBtns {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 1.2rem 0 0.5rem 0;
+  color: var(--text-color);
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 700px) {
+  .createCapsulePage {
+    padding: 1.2rem 0.5rem;
+  }
+  .form {
+    gap: 1.2rem;
+  }
+  .actionBtns {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .surpriseMode {
+    margin-left: 0;
+  }
+} 

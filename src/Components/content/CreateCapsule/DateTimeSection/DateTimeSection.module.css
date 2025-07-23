@@ -1,0 +1,14 @@
+.dateInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+.dateInput, .timeInput {
+  margin-top: 0.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--primary-color);
+  background: var(--secondary-color);
+  color: var(--text-color);
+} 
